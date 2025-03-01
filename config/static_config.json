@@ -1,0 +1,29 @@
+{
+    "i2c_address": 8,
+    "uart_port": "/dev/ttyS0",
+    "baudrate": 9600,
+    "timeout": 1,
+    "core_ip_address": "192.168.4.1",
+    "ambient_sensor_address": 118,
+    "motion_sensor_address": 106,
+    "motor_settings": {
+        "motor_steps": 200,
+        "gear_ratio": 10,
+        "microstepping_options": [2, 4, 8, 16, 32, 64, 128, 256]
+    },
+    "led_settings": {
+        "default_start_led": 1,
+        "default_end_led": 130,
+        "default_red": 255,
+        "default_green": 0,
+        "default_blue": 0,
+        "default_white": 0,
+        "default_brightness": 255
+    },
+    "max_ambient_recent_data_points": 1000,
+    "max_ambient_archived_data_points": 10000,
+    "max_motion_recent_data_points": 1000,
+    "max_motion_archived_data_points": 10000,
+    "critical_storage_value": 500,
+    "imaging_timeout": 30
+}

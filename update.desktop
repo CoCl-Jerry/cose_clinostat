@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Update
+Comment=Run the Clinostat update script
+Icon=/home/pi/Documents/clinostat/src/assets/icons/update.svg
+Exec=/bin/bash -c "cd /home/pi/Documents/clinostat && sudo /usr/bin/python3 update.py"
+Terminal=true
+Type=Application
+Categories=Utility;

@@ -1,0 +1,22 @@
+{
+    "linked": true,
+    "frame_motor_speed": 1.00,
+    "core_motor_speed": 1.00,
+    "frame_motor_direction_cw": true,
+    "core_motor_direction_cw": true,
+    "led_commands": [],
+    "preset_1": [],
+    "preset_2": [],
+    "preset_1_duration": 60,
+    "preset_2_duration": 60,
+    "save_directory": "/home/pi/Desktop",
+    "imaging_image_sequence_title": "",
+    "imaging_image_capture_interval": 1,
+    "imaging_image_capture_interval_units_index": 0,
+    "imaging_image_sequence_duration": 1,
+    "imaging_image_sequence_duration_units_index": 0,
+    "imaging_x_resolution": 2592,
+    "imaging_y_resolution": 2592,
+    "imaging_zoom_level": 0,
+    "fan_speed": 50
+}

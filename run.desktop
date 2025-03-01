@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Clinostat
+Comment=Start the Clinostat program
+Icon=/home/pi/Documents/clinostat/src/assets/icons/logo.svg
+Exec=sh -c "cd /home/pi/Documents/clinostat && LOGFILE=/home/pi/Documents/clinostat/temp/output_$(date +%%Y%%m%%d_%%H%%M%%S).log && sudo /usr/bin/python3 main.py >> $LOGFILE 2>&1"
+Terminal=false
+Type=Application
+Categories=Utility;
