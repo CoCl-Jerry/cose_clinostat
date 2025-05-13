@@ -23,7 +23,7 @@
     "max_ambient_recent_data_points": 1000,
     "max_ambient_archived_data_points": 10000,
     "max_motion_recent_data_points": 1000,
-    "max_motion_archived_data_points": 10000,
+    "max_motion_archived_data_points": 2000000,
     "critical_storage_value": 500,
     "imaging_timeout": 30
 }
