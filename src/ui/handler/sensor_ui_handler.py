@@ -239,23 +239,15 @@ def export_motion_sensor_data_to_csv(main_window):
 
         def write_motion_data(writer, data_list):
             for data in data_list:
-                # Skip rows with missing acceleration or gyro data
-                if data["acceleration"] is None or data["gyro"] is None:
-                    continue
-                    
-                try:
-                    writer.writerow({
-                        "timestamp": data["timestamp"],
-                        "x_acc": data["acceleration"][0],
-                        "y_acc": data["acceleration"][1],
-                        "z_acc": data["acceleration"][2],
-                        "x_gyro": data["gyro"][0],
-                        "y_gyro": data["gyro"][1],
-                        "z_gyro": data["gyro"][2],
-                    })
-                except (IndexError, TypeError, AttributeError):
-                    # Log error but continue processing other rows
-                    print(f"Error processing data row: {data}")
+                writer.writerow({
+                    "timestamp": data["timestamp"],
+                    "x_acc": data["acceleration"][0],
+                    "y_acc": data["acceleration"][1],
+                    "z_acc": data["acceleration"][2],
+                    "x_gyro": data["gyro"][0],
+                    "y_gyro": data["gyro"][1],
+                    "z_gyro": data["gyro"][2],
+                })
 
         # Combine data from temp files
         for temp_file_path in motion_temp_file_names:

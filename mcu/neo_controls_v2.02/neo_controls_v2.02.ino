@@ -17,7 +17,7 @@
 
 #define BUZZER_PIN A8
 
-#define RMS_CURRENT 600
+#define RMS_CURRENT 400
 #define TOFF_VALUE 2
 #define MICROSTEP_RESOLUTION 16
 #define MAX_SPEED 1000
